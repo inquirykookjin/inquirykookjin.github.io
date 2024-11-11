@@ -1,7 +1,41 @@
-h1{
-	background-color:#b297cd;
+header {
+  grid-column: 1 / 13;
+  grid-row: 1;
 }
 
-p{
-    font-size:50px;
+article {
+  grid-column: 4 / 13;
+  grid-row: 2;
+}
+
+aside {
+  grid-column: 1 / 4;
+  grid-row: 2;
+}
+
+footer {
+  grid-column: 1 / 13;
+  grid-row: 3;
+}
+
+body {
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 20px;
+}
+
+header,
+footer {
+  border-radius: 0px;
+  padding: 10px;
+}
+
+aside {
+  border-right: 1px solid #999;
 }
